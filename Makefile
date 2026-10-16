@@ -67,7 +67,6 @@ $(OUTPUT).elf: $(OFILES)
 %.o: %.c
 	$(CC) $(CFLAGS) -MMD -MP -c $< -o $@
 
--inc
-lude $(DEPENDS)
+-include $(DEPENDS)
 
 endif
