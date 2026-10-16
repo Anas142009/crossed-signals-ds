@@ -98,11 +98,11 @@ int main(void) {
     vramSetBankC(VRAM_C_SUB_BG);
 
     consoleInit(&topScreen, 0,
-                BgType_Text4bpp, BgSize_Txt_256x256,
+                BgType_Text4bpp, BgSize_T_256x256,
                 31, 0, true, true);
 
     consoleInit(&bottomScreen, 0,
-                BgType_Text4bpp, BgSize_Txt_256x256,
+                BgType_Text4bpp, BgSize_T_256x256,
                 31, 0, false, true);
 
     int scene = 0;
